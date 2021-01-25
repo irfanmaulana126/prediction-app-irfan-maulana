@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Web Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/offcanvas/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand mr-auto mr-lg-0" href="#">Irfan Maulana</a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+
+    <main role="main" class="container">
+    	<br>
+    	<br>
+    
+	 <div class="my-3 p-3 bg-white rounded shadow-sm">
+	 	<center><h3>The application predicts the number of your trip type in the market</h3></center>
+	 	<center><p>Enter how many times you have traveled in the following conditions, the system will predict your trip type automatically</p></center>
+	   	<form method="POST" action="/predicts">
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <label for="inputEmail4">FINANCIAL SERVICES</label>
+		      <input type="text" class="form-control" id="" name="fs">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <label for="inputPassword4">SHOES</label>
+		      <input type="text" class="form-control" id="" name="sh">
+		    </div>
+		  </div>
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <label for="inputEmail4">PERSONAL CARE</label>
+		      <input type="text" class="form-control" id="" name="pc">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <label for="inputPassword4">MEAT - FRESH & FROZEN</label>
+		      <input type="text" class="form-control" id="" name="mff">
+		    </div>
+		  </div>
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <label for="inputEmail4">BOOKS AND MAGAZINES</label>
+		      <input type="text" class="form-control" id="" name="bm">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <label for="inputPassword4">OPTICAL - LENSES</label>
+		      <input type="text" class="form-control" id="" name="ol">
+		    </div>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>    
+      </div>
+      <div class="my-3 p-3 bg-white rounded shadow-sm">
+	   <p>This is number Trip type for you: <strong class="predic">{{ pred_text }}</strong></p>   
+      </div>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="offcanvas.js"></script>
+    
+  </body>
+</html>
