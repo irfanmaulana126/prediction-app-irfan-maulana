@@ -6,8 +6,6 @@ model =  pickle.load(open('model/model_svm.pkl','rb'))
 
 app = Flask(__name__)
 
-app.run(host='0.0.0.0', port=port, debug=False)
-
 @app.route('/')
 def home():
 	return render_template('main.html');
