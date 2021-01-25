@@ -1,10 +1,15 @@
 from flask import Flask,render_template,request
 import numpy as np 
 import pickle 
+import os
+
+port = int(os.environ.get('PORT', 5000))
 
 model =  pickle.load(open('model/model_svm.pkl','rb'))
 
 app = Flask(__name__)
+
+app.run(host='0.0.0.0', port=port, debug=False)
 
 @app.route('/')
 def home():
